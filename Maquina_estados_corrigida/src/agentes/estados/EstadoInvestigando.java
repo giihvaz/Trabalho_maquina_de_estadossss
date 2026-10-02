@@ -5,7 +5,7 @@ import agentes.AgenteA;
 import agentes.Estado;
 
 public class EstadoInvestigando implements Estado {
-    @Override
+    
     public void enter(Agente agente) {
         AgenteA a = (AgenteA) agente;
         a.resetarContadorEstado();
@@ -13,7 +13,7 @@ public class EstadoInvestigando implements Estado {
         System.out.println("[Agente A] ENTRADA: investigando a área.");
     }
 
-    @Override
+    
     public void execute(Agente agente) {
         AgenteA a = (AgenteA) agente;
         a.incrementarContadorEstado();
@@ -26,7 +26,7 @@ public class EstadoInvestigando implements Estado {
         }
     }
 
-    @Override
+    
     public void leave(Agente agente) {
         System.out.println("[Agente A] SAÍDA: investigação concluída; retornando à patrulha.");
     }
