@@ -5,9 +5,8 @@ import agentes.AgenteA;
 import agentes.AgenteB;
 import agentes.estados.EstadoAlarmeFinalizado;
 
-/**
- * Responsável pelo loop principal e pela comunicação entre os agentes.
- */
+///responsável pelo loop principal e pela comunicação entre os agentes.
+
 public class GerenciadorMaquina {
     private final AgenteA agenteA;
     private final AgenteB agenteB;
