@@ -5,14 +5,14 @@ import agentes.AgenteA;
 import agentes.Estado;
 
 public class EstadoAlertado implements Estado {
-    @Override
+    
     public void enter(Agente agente) {
         AgenteA a = (AgenteA) agente;
         a.resetarContadorEstado();
         System.out.println("[Agente A] ENTRADA: guarda em estado de alerta.");
     }
 
-    @Override
+    
     public void execute(Agente agente) {
         AgenteA a = (AgenteA) agente;
 
@@ -27,7 +27,7 @@ public class EstadoAlertado implements Estado {
                 a.getContadorEstado() + "/2)");
     }
 
-    @Override
+    
     public void leave(Agente agente) {
         System.out.println("[Agente A] SAÍDA: alerta encerrado; iniciando investigação.");
     }
